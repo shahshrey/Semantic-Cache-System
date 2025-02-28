@@ -7,7 +7,7 @@ from langchain_chroma import Chroma
 import time
 from typing import Dict, Any, Optional, Tuple
 
-from constants import (
+from semantic_cache_system.config.constants import (
     CHROMA_PERSIST_DIRECTORY, 
     COLLECTION_NAME, 
     DEFAULT_SIMILARITY_THRESHOLD,
@@ -15,7 +15,7 @@ from constants import (
     DEFAULT_TTL,
     COLORS
 )
-from logger import logger
+from semantic_cache_system.utils.logger import logger
 
 class SemanticCache:
     """

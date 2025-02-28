@@ -1,9 +1,8 @@
-meilisearch 
-langchain 
-openai 
-python-dotenv
-langchain-community
-chromadb
-tiktoken
-langchain_openai
-langchain_chroma
+langchain>=0.1.0
+openai>=1.0.0
+python-dotenv>=1.0.0
+langchain-community>=0.0.10
+chromadb>=0.4.18
+tiktoken>=0.5.1
+langchain_openai>=0.0.5
+langchain_chroma>=0.0.5

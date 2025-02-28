@@ -2,10 +2,10 @@
 Main entry point for the semantic cache system.
 """
 
-from semantic_cache import SemanticCache
-from boardy import get_boardy_response_simple
-from utils import print_header, print_cache_stats, setup_colors
-from tests import run_tests
+from semantic_cache_system.core.semantic_cache import SemanticCache
+from semantic_cache_system.services.boardy import get_boardy_response_simple
+from semantic_cache_system.utils.utils import print_header, print_cache_stats, setup_colors
+from semantic_cache_system.tests.tests import run_tests
 
 def run_example() -> None:
     """
@@ -36,7 +36,10 @@ def run_example() -> None:
     print_cache_stats(example_cache)
 
 
-if __name__ == "__main__":
+def main():
+    """
+    Main function to run the semantic cache system.
+    """
     # Set up colors for terminal output
     setup_colors()
     
@@ -47,4 +50,8 @@ if __name__ == "__main__":
     run_tests()
     
     # Run example
-    run_example() 
+    run_example()
+
+
+if __name__ == "__main__":
+    main() 

@@ -3,10 +3,10 @@ Test cases for the semantic cache system.
 """
 
 from typing import List, Tuple
-
-from semantic_cache import SemanticCache
-from boardy import get_boardy_response
-from utils import (
+from semantic_cache_system.config.constants import COLORS
+from semantic_cache_system.core.semantic_cache import SemanticCache
+from semantic_cache_system.services.boardy import get_boardy_response
+from semantic_cache_system.utils.utils import (
     print_header, 
     print_test_result, 
     print_test_summary, 
@@ -115,7 +115,7 @@ def run_tests() -> List[bool]:
     status_color = "GREEN" if success else "RED"
     status = "PASSED" if success else "FAILED"
     
-    from constants import COLORS
+
     print(f"\n{COLORS[status_color]}{COLORS['BOLD']}{status}{COLORS['RESET']} {passed}/{total} tests passed ({passed/total*100:.2f}%)")
     
     # Print cache statistics

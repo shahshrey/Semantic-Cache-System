@@ -4,10 +4,13 @@ Utility functions for formatting and printing test results.
 
 import sys
 import time
-from typing import List, Optional
+from typing import List, Optional, TYPE_CHECKING, Any, Dict
 
-from constants import COLORS
-from semantic_cache import SemanticCache
+from semantic_cache_system.config.constants import COLORS
+
+# Use TYPE_CHECKING to avoid circular imports
+if TYPE_CHECKING:
+    from semantic_cache_system.core.semantic_cache import SemanticCache
 
 def print_header(text: str) -> None:
     """
@@ -68,7 +71,7 @@ def print_test_summary(test_name: str, results: List[bool]) -> None:
     print(f"\n{status_color}{COLORS['BOLD']}{status}{COLORS['RESET']} {test_name}: {passed}/{total} tests passed")
 
 
-def print_cache_stats(cache: SemanticCache) -> None:
+def print_cache_stats(cache: "SemanticCache") -> None:
     """
     Print cache statistics.
     

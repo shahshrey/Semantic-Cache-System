@@ -5,10 +5,10 @@ Boardy response functions for interacting with the semantic cache.
 import time
 from typing import Tuple, Optional
 
-from constants import TIME_SENSITIVE_KEYWORDS
-from logger import logger
-from semantic_cache import SemanticCache
-from mock_llm import mock_llm_call
+from semantic_cache_system.config.constants import TIME_SENSITIVE_KEYWORDS
+from semantic_cache_system.utils.logger import logger
+from semantic_cache_system.core.semantic_cache import SemanticCache
+from semantic_cache_system.services.mock_llm import mock_llm_call
 
 def get_boardy_response(query: str, semantic_cache: SemanticCache) -> Tuple[str, bool, float]:
     """
