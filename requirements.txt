@@ -5,3 +5,5 @@ python-dotenv
 langchain-community
 chromadb
 tiktoken
+langchain_openai
+langchain_chroma
