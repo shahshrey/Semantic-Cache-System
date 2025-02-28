@@ -1,0 +1,7 @@
+meilisearch 
+langchain 
+openai 
+python-dotenv
+langchain-community
+chromadb
+tiktoken
