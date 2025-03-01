@@ -1,6 +1,4 @@
-"""
-Utility functions for the semantic cache system.
-"""
+"""Utility functions for the semantic cache system."""
 
 from semantic_cache_system.utils.logger import logger
 from semantic_cache_system.utils.utils import (

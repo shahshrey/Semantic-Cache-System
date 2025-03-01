@@ -1,13 +1,11 @@
-"""
-Mock LLM functionality for testing the semantic cache.
-"""
+"""Mock LLM functionality for testing the semantic cache."""
 
 import time
 
 
 def mock_llm_call(query: str) -> str:
-    """
-    This function simulates an LLM call.
+    """Simulate an LLM call for testing purposes.
+
     In a real implementation, this would call an actual LLM API.
 
     Args:

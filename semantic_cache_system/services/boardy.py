@@ -77,7 +77,7 @@ def get_boardy_response(query: str, semantic_cache: SemanticCache) -> Tuple[str,
 
 def get_boardy_response_simple(query: str, semantic_cache: Optional[SemanticCache] = None) -> str:
     """
-    A simplified version of get_boardy_response that matches the signature in the assignment.
+    Get a simplified response from Boardy that matches the signature in the assignment.
 
     Args:
         query: The user's query

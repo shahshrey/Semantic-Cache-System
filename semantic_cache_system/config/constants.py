@@ -1,6 +1,4 @@
-"""
-Constants and configuration for the semantic cache system.
-"""
+"""Constants and configuration for the semantic cache system."""
 
 # Major constants
 CHROMA_PERSIST_DIRECTORY = "chroma_db"

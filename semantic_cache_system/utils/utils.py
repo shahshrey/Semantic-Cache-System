@@ -4,7 +4,7 @@ Utility functions for formatting and printing test results.
 
 import sys
 import time
-from typing import TYPE_CHECKING, Any, Dict, List, Optional
+from typing import TYPE_CHECKING, List, Optional
 
 from semantic_cache_system.config.constants import COLORS
 

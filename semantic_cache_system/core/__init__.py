@@ -1,5 +1,3 @@
-"""
-Core functionality for the semantic cache system.
-"""
+"""Core functionality for the semantic cache system."""
 
-from semantic_cache_system.core.semantic_cache import SemanticCache
+# These imports are intentionally left empty as they are used by external modules

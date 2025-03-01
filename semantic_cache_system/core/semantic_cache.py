@@ -127,7 +127,10 @@ class SemanticCache:
             k: Number of similar results to consider
 
         Returns:
-            Tuple[Optional[str], float, Optional[float]]: The cached response if found, similarity score, and timestamp (None if not found)
+            Tuple containing:
+            - The cached response if found (or None)
+            - Similarity score
+            - Timestamp (None if not found)
         """
         try:
             # Perform similarity search in ChromaDB

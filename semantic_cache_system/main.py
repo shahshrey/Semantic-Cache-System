@@ -1,6 +1,4 @@
-"""
-Main entry point for the semantic cache system.
-"""
+"""Main entry point for the semantic cache system."""
 
 from semantic_cache_system.core.semantic_cache import SemanticCache
 from semantic_cache_system.services.boardy import get_boardy_response_simple
@@ -9,9 +7,7 @@ from semantic_cache_system.utils.utils import print_cache_stats, print_header, s
 
 
 def run_example() -> None:
-    """
-    Run an example of using the semantic cache as in the assignment.
-    """
+    """Run an example of using the semantic cache as in the assignment."""
     print_header("EXAMPLE USAGE (AS IN ASSIGNMENT)")
 
     # Create a new cache for the example
@@ -38,9 +34,7 @@ def run_example() -> None:
 
 
 def main():
-    """
-    Main function to run the semantic cache system.
-    """
+    """Run the semantic cache system."""
     # Set up colors for terminal output
     setup_colors()
 

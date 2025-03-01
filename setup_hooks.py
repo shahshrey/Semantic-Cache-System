@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Setup script for installing and updating pre-commit hooks.
-"""
+"""Setup script for installing and updating pre-commit hooks."""
 
 import logging
 import os

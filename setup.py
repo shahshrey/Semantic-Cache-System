@@ -1,6 +1,4 @@
-"""
-Setup script for the semantic_cache_system package.
-"""
+"""Setup script for the semantic_cache_system package."""
 
 from setuptools import find_packages, setup
 

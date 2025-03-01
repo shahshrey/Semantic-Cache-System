@@ -1,6 +1,4 @@
-"""
-Test cases for the semantic cache system.
-"""
+"""Test cases for the semantic cache system."""
 
 from typing import List, Tuple
 
@@ -156,7 +154,8 @@ def run_tests() -> List[bool]:
     status = "PASSED" if success else "FAILED"
 
     print(
-        f"\n{COLORS[status_color]}{COLORS['BOLD']}{status}{COLORS['RESET']} {passed}/{total} tests passed ({passed/total*100:.2f}%)"
+        f"\n{COLORS[status_color]}{COLORS['BOLD']}{status}{COLORS['RESET']} "
+        f"{passed}/{total} tests passed ({passed/total*100:.2f}%)"
     )
 
     # Print cache statistics
