@@ -34,4 +34,4 @@ uv pip install -e .
 echo "Installation complete! You can now run the semantic cache system with:"
 echo "./run.py"
 echo "or"
-echo "python -m semantic_cache_system.main" 
+echo "python -m semantic_cache_system.main"

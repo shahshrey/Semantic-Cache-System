@@ -24,13 +24,21 @@ COLORS = {
     "BG_RED": "\033[41m",
     "BG_GREEN": "\033[42m",
     "BG_YELLOW": "\033[43m",
-    "BG_BLUE": "\033[44m"
+    "BG_BLUE": "\033[44m",
 }
 
 # Time-sensitive keywords for query detection
 TIME_SENSITIVE_KEYWORDS = [
-    "current time", "right now", "current weather", 
-    "today", "tonight", "this morning", 
-    "this afternoon", "this evening", "now", 
-    "current", "live", "real-time"
-] 
+    "current time",
+    "right now",
+    "current weather",
+    "today",
+    "tonight",
+    "this morning",
+    "this afternoon",
+    "this evening",
+    "now",
+    "current",
+    "live",
+    "real-time",
+]

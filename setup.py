@@ -2,7 +2,7 @@
 Setup script for the semantic_cache_system package.
 """
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name="semantic_cache_system",
@@ -27,4 +27,4 @@ setup(
             "semantic-cache=semantic_cache_system.main:main",
         ],
     },
-) 
+)
