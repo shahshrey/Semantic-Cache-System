@@ -26,7 +26,7 @@ A semantic cache system for AI responses that uses embeddings to match semantica
 
 ## Why This Matters
 
-In AI-powered applications like Boardy, Large Language Models (LLMs) are frequently called with semantically similar queries. Each LLM call:
+In AI-powered applications like AI, Large Language Models (LLMs) are frequently called with semantically similar queries. Each LLM call:
 - Incurs API costs (typically $0.01-$0.10 per call)
 - Adds latency (500ms-5s per request)
 - Consumes computational resources
@@ -152,17 +152,17 @@ uv install -e .
 
 ```python
 from semantic_cache_system.core.semantic_cache import SemanticCache
-from semantic_cache_system.services.boardy import get_boardy_response_simple
+from semantic_cache_system.services.ai import get_ai_response_simple
 
 # Create a cache instance
 cache = SemanticCache(verbose=True)
 
 # Get a response (will check cache first)
-response = get_boardy_response_simple("What's the weather like in New York?", cache)
+response = get_ai_response_simple("What's the weather like in New York?", cache)
 print(response)
 
 # Similar query will hit the cache
-response = get_boardy_response_simple("How's the weather in NYC?", cache)
+response = get_ai_response_simple("How's the weather in NYC?", cache)
 print(response)
 ```
 
@@ -218,7 +218,7 @@ This caching system is particularly valuable for:
 
 1. **Customer Service AI**: Where similar questions are frequently asked
 2. **Educational Platforms**: Where explanations of common concepts can be cached
-3. **AI Agents like Boardy**: That make network matches and respond to user queries
+3. **AI Agents like AI**: That make network matches and respond to user queries
 4. **High-Volume API Services**: Where reducing LLM calls directly impacts operating costs
 
 ## Development
@@ -234,7 +234,7 @@ semantic_cache_system/
 │   └── semantic_cache.py    # Core caching implementation
 ├── services/
 │   ├── __init__.py
-│   ├── boardy.py            # Integration with Boardy
+│   ├── ai.py            # Integration with AI
 │   └── mock_llm.py          # Mock LLM for testing
 ├── utils/
 │   ├── __init__.py

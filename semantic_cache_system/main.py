@@ -1,7 +1,7 @@
 """Main entry point for the semantic cache system."""
 
 from semantic_cache_system.core.semantic_cache import SemanticCache
-from semantic_cache_system.services.boardy import get_boardy_response_simple
+from semantic_cache_system.services.ai import get_ai_response_simple
 from semantic_cache_system.tests.tests import run_tests
 from semantic_cache_system.utils.utils import print_cache_stats, print_header, setup_colors
 
@@ -16,17 +16,17 @@ def run_example() -> None:
 
     # First query
     print("\n# First query")
-    response1 = get_boardy_response_simple("What's the weather like in New York today?", example_cache)
+    response1 = get_ai_response_simple("What's the weather like in New York today?", example_cache)
     print(f"Response: {response1}")
 
     # Similar query
     print("\n# Similar query")
-    response2 = get_boardy_response_simple("How's the weather in NYC right now?", example_cache)
+    response2 = get_ai_response_simple("How's the weather in NYC right now?", example_cache)
     print(f"Response: {response2}")
 
     # Different query
     print("\n# Different query")
-    response3 = get_boardy_response_simple("What's the capital of France?", example_cache)
+    response3 = get_ai_response_simple("What's the capital of France?", example_cache)
     print(f"Response: {response3}")
 
     # Print cache statistics for the example
@@ -38,7 +38,7 @@ def main():
     # Set up colors for terminal output
     setup_colors()
 
-    print_header("BOARDY AI SEMANTIC CACHE")
+    print_header("AI AI SEMANTIC CACHE")
 
     # Run tests
     print_header("RUNNING TESTS")

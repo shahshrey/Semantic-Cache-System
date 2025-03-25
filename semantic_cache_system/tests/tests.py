@@ -4,7 +4,7 @@ from typing import List, Tuple
 
 from semantic_cache_system.config.constants import COLORS
 from semantic_cache_system.core.semantic_cache import SemanticCache
-from semantic_cache_system.services.boardy import get_boardy_response
+from semantic_cache_system.services.ai import get_ai_response
 from semantic_cache_system.utils.utils import (
     print_cache_stats,
     print_header,
@@ -127,8 +127,8 @@ def run_tests() -> List[bool]:
             test_cache = cache
 
         for query, expected_cached in queries:
-            # Get response from Boardy
-            response, from_cache, similarity = get_boardy_response(query, test_cache)
+            # Get response from AI
+            response, from_cache, similarity = get_ai_response(query, test_cache)
 
             # Get timestamp for the cached response if it's a cache hit
             timestamp = None
@@ -166,5 +166,5 @@ def run_tests() -> List[bool]:
 
 if __name__ == "__main__":
     setup_colors()
-    print_header("BOARDY AI SEMANTIC CACHE TEST")
+    print_header("AI AI SEMANTIC CACHE TEST")
     run_tests()

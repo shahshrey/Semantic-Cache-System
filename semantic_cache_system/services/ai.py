@@ -1,5 +1,5 @@
 """
-Boardy response functions for interacting with the semantic cache.
+AI response functions for interacting with the semantic cache.
 """
 
 import time
@@ -11,9 +11,9 @@ from semantic_cache_system.services.mock_llm import mock_llm_call
 from semantic_cache_system.utils.logger import logger
 
 
-def get_boardy_response(query: str, semantic_cache: SemanticCache) -> Tuple[str, bool, float]:
+def get_ai_response(query: str, semantic_cache: SemanticCache) -> Tuple[str, bool, float]:
     """
-    Get a response from Boardy, using the semantic cache when possible.
+    Get a response from AI, using the semantic cache when possible.
 
     Args:
         query: The user's query
@@ -71,26 +71,26 @@ def get_boardy_response(query: str, semantic_cache: SemanticCache) -> Tuple[str,
 
         return llm_response, False, 0.0
     except Exception as e:
-        logger.exception(f"Error getting Boardy response: {e}")
+        logger.exception(f"Error getting AI response: {e}")
         return f"Error: {str(e)}", False, 0.0
 
 
-def get_boardy_response_simple(query: str, semantic_cache: Optional[SemanticCache] = None) -> str:
+def get_ai_response_simple(query: str, semantic_cache: Optional[SemanticCache] = None) -> str:
     """
-    Get a simplified response from Boardy that matches the signature in the assignment.
+    Get a simplified response from AI that matches the signature in the assignment.
 
     Args:
         query: The user's query
         semantic_cache: Optional semantic cache instance (creates one if not provided)
 
     Returns:
-        str: The response from Boardy
+        str: The response from AI
     """
     # Create a cache if not provided
     if semantic_cache is None:
         semantic_cache = SemanticCache()
 
     # Get the response using the full version
-    response, _, _ = get_boardy_response(query, semantic_cache)
+    response, _, _ = get_ai_response(query, semantic_cache)
 
     return response
